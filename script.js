@@ -34,7 +34,7 @@ function handleFormSubmit(e) {
   alert('Thank you for your quote request! We will contact you within 24 hours.');
 }
 
-// Add simple CSS for hamburger menu animation
+// hamburger menu animation
 const style = document.createElement('style');
 style.textContent = `
     .hamburger.active .bar:nth-child(2) {
