@@ -29,11 +29,6 @@ function initializeNavigation() {
   }
 }
 
-function handleFormSubmit(e) {
-  e.preventDefault();
-  alert('Thank you for your quote request! We will contact you within 24 hours.');
-}
-
 // hamburger menu animation
 const style = document.createElement('style');
 style.textContent = `

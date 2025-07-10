@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form results</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--Icons for social media-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo1.jpg">
+    <link rel="apple-touch-icon" href="images/logo1.jpg">
+    <link rel="icon" sizes="192x192" href="images/logo1.jpg">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">MoveMe</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="aboutus.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="results" id="contentstart">
+        <h2>Your form has been submitted</h2>
+        <div class="about-text">
+            <h3>You entered the following data:</h3>
+            <div class="results-container">
+
+                <script>
+                    var formData = location.search;
+                    formData = formData.substring(1, formData.length);
+                    while (formData.indexOf("+") !== -1) {
+                        formData = formData.replace("+", " ");
+                    }
+                    formData = decodeURIComponent(formData);
+                    var formArray = formData.split("&");
+                    for (var i = 0; i < formArray.length; i = i + 1) {
+                        document.write("<p>" + formArray[i] + "</p>");
+                    }
+                </script>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MoveMe</h3>
+                    <p>Your trusted moving partner for over 10 years. Licensed, insured, and committed to excellence.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Local Moving</a></li>
+                        <li><a href="services.html">Long Distance Moving</a></li>
+                        <li><a href="services.html">Packing Services</a></li>
+                        <li><a href="services.html">Storage Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Phone: <a href="tel:+19176910062">917-691-0062</a></p>
+                    <p>Email: <a href="mailto:info@moveme.com">info@moveme.com</a></p>
+                    <a href="https://www.instagram.com/rustam.irhashau/" class="fa fa-instagram"></a>
+                    <a href="https://www.facebook.com/rustam.irgashev.77" class="fa fa-facebook"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> MoveMe. All rights reserved.</p>
+                <p>Rustam Irhashau</p>
+                <p>Last Edited: 07.10.2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
