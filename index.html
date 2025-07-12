@@ -149,7 +149,7 @@
       <div class="footer-bottom">
         <p>&copy; <span id="current-year"></span> MoveMe. All rights reserved.</p>
         <p>Rustam Irhashau</p>
-        <p>Last Edited: 07.10.2025</p>
+        <p id ="date"></p>
       </div>
     </div>
   </footer>
@@ -162,6 +162,12 @@
     $(function() {
       $("#home").hide(0).slideDown(1000);
     })
+  </script>
+
+  <!-- Footer Last modified script-->
+  <script>
+    const date = new Date(document.lastModified);
+    document.getElementById("date").innerHTML = "Last Modified: " + date.toLocaleDateString();
   </script>
 </body>
 
