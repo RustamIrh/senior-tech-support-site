@@ -1,202 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!--Icons for social media-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="shortcut icon" href="images/logo1.jpg" />
-    <link rel="apple-touch-icon" href="images/logo1.jpg" />
-    <link rel="icon" sizes="192x192" href="images/logo1.jpg" />
-  </head>
-  <body>
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <a href="index.html">Click&Care</a>
-        </div>
-        <div class="nav-menu" id="nav-menu">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="aboutus.html" class="nav-link">About Us</a>
-          <a href="contact.html" class="nav-link">Contact Us</a>
-          <a href="faq.html" class="nav-link">FAQ</a>
-        </div>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Click & Care</title>
+  <link rel="stylesheet" href="style.css"> <!-- adjust path if CSS is in another folder -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0dcaf0;
+      color: #fff;
+      padding: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo img {
+      height: 40px;
+    }
+    .call-now {
+      background: #fff;
+      color: #0dcaf0;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .call-now:hover {
+      background: #0bb2d4;
+      color: #fff;
+    }
+    .about-hero {
+      background: url("logo_capstone.jpg") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .about-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .section h2 {
+      color: #0dcaf0;
+      margin-bottom: 1rem;
+    }
+    .team {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .team-member {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 200px;
+    }
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #0dcaf0;
+    }
+    footer {
+      background: #0dcaf0;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Click & Care Logo">
+      <a href="tel:+18574084904" class="call-now">📞 (857) 408-4904</a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-      <div class="container">
-        <h2>About Us</h2>
-        <div class="about-text">
-          <p>
-            We are a new and exciting company. That is why, in order to make you
-            feel comfortable and relaxed before, during, and after your
-            transfer, we focused our business plan on delivering excellent
-            service and forming an excellent team of professionals.
-          </p>
-        </div>
-        <div class="services-grid">
-          <div class="about-item">
-            <h3>Local Moving</h3>
-            <p>
-              Professional local moving services within the city and surrounding
-              areas
-            </p>
-            <ul>
-              <li>Residential moves</li>
-              <li>Apartment relocations</li>
-              <li>Same-day service available</li>
-            </ul>
-          </div>
-          <div class="about-item">
-            <h3>Long Distance Moving</h3>
-            <p>
-              Reliable long-distance moving across states with full insurance
-              coverage
-            </p>
-            <ul>
-              <li>Interstate moves</li>
-              <li>Cross-country relocations</li>
-              <li>Tracking available</li>
-            </ul>
-          </div>
-          <div class="about-item">
-            <h3>Packing Services</h3>
-            <p>
-              Professional packing and unpacking services to protect your
-              belongings
-            </p>
-            <ul>
-              <li>Full packing service</li>
-              <li>Fragile item protection</li>
-              <li>Packing supplies included</li>
-            </ul>
-          </div>
-          <div class="about-item">
-            <h3>Storage Solutions</h3>
-            <p>Secure storage facilities for short-term and long-term needs</p>
-            <ul>
-              <li>Climate-controlled units</li>
-              <li>24/7 security</li>
-              <li>Flexible rental terms</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="about-hero">
+    <h1>About Click & Care</h1>
+    <p>Making technology simple, caring, and accessible for seniors.</p>
+  </section>
 
-    <!-- Full-width images with number and caption text. Made with help of W3Schools.com -->
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 5</div>
-        <img src="images/boxes.jpg" alt="Stack of boxes" style="width: 100%" />
-      </div>
+  <div class="container">
+    <div class="section">
+      <h2>Our Mission</h2>
+      <p>At Click & Care, our mission is to empower seniors by making technology easy, safe, and stress-free. We believe everyone deserves to enjoy the benefits of modern tools without barriers.</p>
+    </div>
+<div class="section">
+  <h2>What We Offer</h2>
+  <ul>
+    <li>📞 Hotline support for quick fixes</li>
+    <li>🏡 In-home visits for setup and troubleshooting</li>
+    <li>👥 Community workshops for hands-on learning</li>
+  </ul>
+</div>
 
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 5</div>
-        <img
-          src="images/boxes1.jpg"
-          alt="Boxes in the corner"
-          style="width: 100%"
-        />
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 5</div>
-        <img
-          src="images/boxesincorner.jpg"
-          alt="Boxes and belonings"
-          style="width: 100%"
-        />
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="images/mover.jpg" alt="Mover" style="width: 100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="images/jeansbox.jpg" alt="Unpacking" style="width: 100%" />
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div class="section">
+  <h2>Meet Our Team</h2>
+  <div class="team">
+    <div class="team-member">
+      <img src="images/sara.jpg" alt="Sara">
+      <h3>Sara Naji</h3>
+      <p>Backend Developer</p>
+    </div>
+    <div class="team-member">
+      <img src="images/rustam.jpg" alt="Rustam">
+      <h3>Irhashau Rustam</h3>
+      <p>Tech Lead</p>
+    </div>
+    <div class="team-member">
+      <img src="images/kelvin.jpg" alt="Kelvin">
+      <h3>Martinez Kelvin</h3>
+      <p>Database Specialist</p>
+    </div>
+    <div class="team-member">
+      <img src="images/fobai.jpg" alt="Fobai">
+      <h3>Mbamuku Fobai</h3>
+      <p>Frontend Developer</p>
+    </div>
+   <div class="team-member">
+      <img src="images/.jpg" alt="Chris">
+      <h3>Chris Lara</h3>
+      <p>TBD</p>
     </div>
 
-    <!-- Button -->
-    <div class="center-line">
-      <a class="cta-button" href="contact.html">Request Free Quote</a>
-    </div>
+  </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>MoveMe</h3>
-            <p>
-              Your trusted moving partner for over 10 years. Licensed, insured,
-              and committed to excellence.
-            </p>
-          </div>
-          <div class="footer-section">
-            <h3>Services</h3>
-            <ul>
-              <li><a href="services.html">Local Moving</a></li>
-              <li><a href="services.html">Long Distance Moving</a></li>
-              <li><a href="services.html">Packing Services</a></li>
-              <li><a href="services.html">Storage Solutions</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Contact</h3>
-            <p>Phone: <a href="tel:+19176910062">917-691-0062</a></p>
-            <p>Email: <a href="mailto:info@moveme.com">info@moveme.com</a></p>
-            <a
-              href="https://www.instagram.com/rustam.irhashau/"
-              class="fa fa-instagram"
-            ></a>
-            <a
-              href="https://www.facebook.com/rustam.irgashev.77"
-              class="fa fa-facebook"
-            ></a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>
-            &copy; <span id="current-year"></span> MoveMe. All rights reserved.
-          </p>
-          <p>Rustam Irhashau</p>
-          <p id="date"></p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <!-- Footer Last modified script-->
-    <script>
-      const date = new Date(document.lastModified);
-      document.getElementById("date").innerHTML =
-        "Last Modified: " + date.toLocaleDateString();
-    </script>
-  </body>
+<footer>
+  <p>&copy; 2025 Click & Care. All Rights Reserved.</p>
+</footer>
+</body>
 </html>
