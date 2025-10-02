@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service – MoveMe</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
-     <!--Icons for social media-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="images/logo1.jpg">
-    <link rel="apple-touch-icon" href="images/logo1.jpg">
-    <link rel="icon" sizes="192x192" href="images/logo1.jpg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Services & Pricing – Senior Tech Support</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="shortcut icon" href="images/logo1.jpg" />
+    <link rel="apple-touch-icon" href="images/logo1.jpg" />
+    <link rel="icon" sizes="192x192" href="images/logo1.jpg" />
   </head>
   <body>
     <!-- Navigation Menu -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="nav-container">
         <div class="nav-logo">
-          <a href="index.html">MoveMe</a>
+          <a href="index.html">Neighborly Tech</a>
         </div>
         <div class="nav-menu" id="nav-menu">
           <a href="index.html" class="nav-link">Home</a>
@@ -26,174 +25,276 @@
           <a href="contact.html" class="nav-link">Contact Us</a>
           <a href="faq.html" class="nav-link">FAQ</a>
         </div>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="hamburger" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </div>
       </div>
     </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Hero -->
+    <header class="about" style="padding-top:2rem;padding-bottom:0;">
       <div class="container">
-        <h2>Services and Pricing</h2>
+        <h1 style="margin-bottom:.25rem;">Services & Pricing</h1>
+        <p class="subhead">
+          Patient, local tech help for seniors in Greater Boston — remote or in-home. Choose a plan or use pay-per-visit.
+        </p>
+      </div>
+    </header>
+
+   <section class="pricing-section" aria-labelledby="plans-title">
+  <div class="container">
+    <h2 id="plans-title" class="pricing-title">Choose Your Plan</h2>
+
+    <div class="plan-grid">
+      <!-- STARTER -->
+      <article class="plan-card" aria-labelledby="starter-title">
+        <header class="plan-header">
+          <h3 id="starter-title">Starter</h3>
+          <div class="plan-price">$39<span>/mo</span></div>
+        </header>
+        <p class="plan-tagline">Remote-first safety net</p>
+        <ul class="plan-points">
+          <li>Unlimited remote support</li>
+          <li>1 in-home visit / year</li>
+          <li>Scam & password check</li>
+          <li>Same-day remote response</li>
+        </ul>
+
+        <details class="plan-details">
+          <summary>More details</summary>
+          <ul class="plan-more">
+            <li>Phone/video support (Mon–Fri 9–7, Sat 10–4)</li>
+            <li>60-min in-home (rollover up to 12 mo)</li>
+            <li>Password manager setup + migration</li>
+            <li>Visit summary email after each session</li>
+            <li>In-home within 5 business days</li>
+          </ul>
+        </details>
+
+        <div class="plan-actions">
+          <a class="cta-button" href="contact.html">Get Starter</a>
+        </div>
+      </article>
+
+      <!-- HOME+ -->
+      <article class="plan-card plan-featured" aria-labelledby="home-title">
+        <header class="plan-header">
+          <h3 id="home-title">Home+</h3>
+          <div class="plan-price">$59<span>/mo</span></div>
+        </header>
+        <p class="plan-tagline">Best value for ongoing help</p>
+        <ul class="plan-points">
+          <li>Everything in Starter</li>
+          <li>3 in-home visits / year</li>
+          <li>Wi-Fi tune-up</li>
+          <li>Two mini-lessons/quarter</li>
+        </ul>
+
+        <details class="plan-details">
+          <summary>More details</summary>
+          <ul class="plan-more">
+            <li>60-min visits (rollovers allowed, cap 4)</li>
+            <li>TV/Streaming housekeeping (apps & logins)</li>
+            <li>In-home within 3 business days</li>
+            <li>1 after-hours slot/mo at standard price</li>
+          </ul>
+        </details>
+
+        <div class="plan-actions">
+          <a class="cta-button" href="contact.html">Get Home+</a>
+        </div>
+      </article>
+
+      <!-- CONCIERGE -->
+      <article class="plan-card" aria-labelledby="concierge-title">
+        <header class="plan-header">
+          <h3 id="concierge-title">Concierge</h3>
+          <div class="plan-price">$89<span>/mo</span></div>
+        </header>
+        <p class="plan-tagline">High-touch, priority care</p>
+        <ul class="plan-points">
+          <li>6 in-home visits / year</li>
+          <li>Priority scheduling</li>
+          <li>Device concierge</li>
+          <li>Caregiver hotline</li>
+        </ul>
+
+        <details class="plan-details">
+          <summary>More details</summary>
+          <ul class="plan-more">
+            <li>Everything in Home+</li>
+            <li>Next-business-day remote triage</li>
+            <li>In-home within 2 business days</li>
+            <li>Setup of 2 devices/yr + up to 6 smart-home devices</li>
+            <li>Quarterly Tech Well-Being Report</li>
+          </ul>
+        </details>
+
+        <div class="plan-actions">
+          <a class="cta-button" href="contact.html">Get Concierge</a>
+        </div>
+      </article>
+
+      <!-- PAY-PER-VISIT -->
+      <article class="plan-card plan-outline" aria-labelledby="ppv-title">
+        <header class="plan-header">
+          <h3 id="ppv-title">Pay-Per-Visit</h3>
+          <div class="plan-price">$99<span>/first hr</span></div>
+        </header>
+        <p class="plan-tagline">Only when you need us</p>
+        <ul class="plan-points">
+          <li>In-home troubleshooting/setup</li>
+          <li>$45 / each additional 30 min</li>
+          <li>10-min follow-up (7 days)</li>
+          <li>No-fix, no-pay</li>
+        </ul>
+
+        <details class="plan-details">
+          <summary>More details</summary>
+          <ul class="plan-more">
+            <li>Credit $39 to a plan if you subscribe within 7 days</li>
+            <li>2-hour arrival window; text on the way</li>
+          </ul>
+        </details>
+
+        <div class="plan-actions">
+          <a class="cta-button" href="contact.html">Book a Visit</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+        <!-- Add-ons -->
+        <h3 style="margin-top:2rem;">Add-Ons</h3>
+        <table class="features-table" aria-label="Add-ons table">
+          <thead>
+            <tr>
+              <th>Add-On</th>
+              <th>What you get</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Family Add-On</td>
+              <td>Caregiver hotline + monthly status email + shared vault guidance</td>
+              <td>+$15/mo</td>
+            </tr>
+            <tr>
+              <td>Extra In-Home Pack</td>
+              <td>2 extra in-home hours for subscribers (doesn’t expire while subscribed)</td>
+              <td>$139</td>
+            </tr>
+            <tr>
+              <td>After-Hours Pass</td>
+              <td>Waives after-hours surcharge once per month</td>
+              <td>+$25/mo</td>
+            </tr>
+            <tr>
+              <td>Building/HOA Day</td>
+              <td>4-hour on-site tech desk; subscribers get free 15-min tune-up</td>
+              <td>$449</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="about" aria-labelledby="catalog-title">
+      <div class="container">
+        <h2 id="catalog-title">What We Help With</h2>
         <div class="about-content">
           <div class="about-text">
-            <p>
-              Our moving prices have no hidden fees or additional costs. MoveMe provides fair prices for all types of
-              moves. Whether it be local moving,interstate moving, commercial moving, packaging or storing – we can help
-            </p>
-            <!-- Price Table-->
-            <h3>Our Pricing</h3>
-            <table class="features-table">
-              <thead>
-                <tr>
-                  <th>Best For</th>
-                  <th>Includes</th>
-                  <th>Rate</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Studio/1 bedroom apartment</td>
-                  <td>2 Movers + Truck</td>
-                  <td>$130/hr</td>
-                </tr>
-                <tr>
-                  <td>1/2 bedroom apartment</td>
-                  <td>3 Movers + Truck</td>
-                  <td>$170/hr</td>
-                </tr>
-                <tr>
-                  <td>2/3 bedroom apartment</td>
-                  <td>4 Movers + Truck</td>
-                  <td>$199/hr</td>
-                </tr>
-              </tbody>
-            </table>
+            <ul class="feature-list two-col" style="columns:2;column-gap:2rem;max-width:1000px;">
+              <li>Wi-Fi fixes &amp; router setup</li>
+              <li>Printer &amp; email issues</li>
+              <li>TV/Streaming setup (Roku, Fire TV, Apple TV)</li>
+              <li>Phone/Tablet/Computer setup &amp; data transfer</li>
+              <li>Zoom/FaceTime with family</li>
+              <li>Password manager setup &amp; MFA</li>
+              <li>Scam/phishing cleanup &amp; safety review</li>
+              <li>Cloud backups &amp; photo organization</li>
+              <li>Smart home devices (speakers, doorbells, cameras)</li>
+              <li>Bite-size lessons (15 min)</li>
+            </ul>
 
-            <h3>Storage</h3>
-            <table class="features-table">
-              <thead>
-                <tr>
-                  <th>Best For</th>
-                  <th>Rate</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Room or less</td>
-                  <td>$130</td>
-                </tr>
-                <tr>
-                  <td>Studio</td>
-                  <td>$150</td>
-                </tr>
-                <tr>
-                  <td>1 Bedroom</td>
-                  <td>$190</td>
-                </tr>
-                <tr>
-                  <td>2 Bedroom</td>
-                  <td>$250</td>
-                </tr>
-              </tbody>
-            </table>
+            <p class="muted" style="margin-top:1rem;">
+              <strong>Exclusions/limits:</strong> no board-level repairs, no roof/low-voltage runs; data recovery &gt;1 hr quoted separately; whole-home mesh installs quoted as projects.
+            </p>
           </div>
         </div>
       </div>
-    </section>      
-      <div class="about-content">
-      <div class="about-text"> <h3>Long Distance Moving </h3></div></div>
-     
-      <!-- Slide Show -->
-      <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 6</div>
-        <img src="images/nyc-sm.jpg" alt="New York" style="width: 100%">
-        <div class="text">NYC: Starting at $990</div>
+    </section>
+
+    <!-- Service Area & Hours -->
+    <section class="about" aria-labelledby="area-title">
+      <div class="container">
+        <h2 id="area-title">Service Area &amp; Hours</h2>
+        <p><strong>Coverage:</strong> Boston, Cambridge, Somerville, Brookline, Newton, Quincy, Watertown, Medford. (+$20 trip fee outside this zone within 20 miles.)</p>
+        <p><strong>Hours:</strong> Mon–Fri 9am–7pm; Sat 10am–4pm. <strong>After-hours:</strong> +$35 surcharge (tech availability).</p>
+        <p><strong>Booking:</strong> 2-hour arrival windows; we text on the way.</p>
       </div>
+    </section>
 
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 6</div>
-        <img src="images/dc-sm.jpg" alt="DC" style="width: 100%">
-        <div class="text">DC: Starting at $1500</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 6</div>
-        <img src="images/pa-sm.jpg" alt="PA" style="width: 100%">
-        <div class="text">PA: Starting at $1100</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 6</div>
-        <img src="images/fl-sm.jpg" alt="FL" style="width: 100%">
-        <div class="text">FL: Starting at $3500</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 6</div>
-        <img src="images/tn-sm.jpg" alt="TN" style="width: 100%">
-        <div class="text">TN: Starting at $3100</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">6 / 6</div>
-        <img src="images/il-sm.jpg" alt="IL" style="width: 100%">
-        <div class="text">IL: Starting at $3000</div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    
-
-    <!-- Button -->
-    <div class="center-line">
-      <a class="cta-button" href="contact.html">Request Free Quote</a>
+    <!-- CTA -->
+    <div class="center-line" style="margin-top:0;">
+      <a class="cta-button" href="contact.html" aria-label="Request service or subscribe">Request Service</a>
+      <a class="cta-button" href="tel:+19176910062" aria-label="Call to speak with support" style="margin-left:.5rem;">Call: 917-691-0062</a>
     </div>
 
-<!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>MoveMe</h3>
-            <p>Your trusted moving partner for over 10 years. Licensed, insured, and committed to excellence.</p>
+            <h3>Neighborly Tech</h3>
+            <p>Patient, local tech support for seniors in Greater Boston. Background-checked. No-fix, no-pay for single-issue visits.</p>
           </div>
           <div class="footer-section">
             <h3>Services</h3>
             <ul>
-              <li><a href="services.html">Local Moving</a></li>
-              <li><a href="services.html">Long Distance Moving</a></li>
-              <li><a href="services.html">Packing Services</a></li>
-              <li><a href="services.html">Storage Solutions</a></li>
+              <li><a href="services.html">Wi-Fi &amp; Internet</a></li>
+              <li><a href="services.html">TV &amp; Streaming</a></li>
+              <li><a href="services.html">Device Setup</a></li>
+              <li><a href="services.html">Passwords &amp; Security</a></li>
+              <li><a href="services.html">Smart Home</a></li>
             </ul>
           </div>
           <div class="footer-section">
             <h3>Contact</h3>
             <p>Phone: <a href="tel:+19176910062">917-691-0062</a></p>
             <p>Email: <a href="mailto:info@moveme.com">info@moveme.com</a></p>
-            <a href="https://www.instagram.com/rustam.irhashau/" class="fa fa-instagram"></a>
-            <a href="https://www.facebook.com/rustam.irgashev.77" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/rustam.irhashau/" class="fa fa-instagram" aria-label="Instagram"></a>
+            <a href="https://www.facebook.com/rustam.irgashev.77" class="fa fa-facebook" aria-label="Facebook"></a>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; <span id="current-year"></span> MoveMe. All rights reserved.</p>
+          <p>&copy; <span id="current-year"></span> Neighborly Tech. All rights reserved.</p>
           <p>Rustam Irhashau</p>
-          <p id ="date"></p>
+          <p id="date"></p>
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
 
-    <!-- Footer Last modified script-->
+    <script src="script.js"></script>
+    <!-- Last modified -->
     <script>
       const date = new Date(document.lastModified);
-      document.getElementById("date").innerHTML = "Last Modified: " + date.toLocaleDateString();
+      document.getElementById("date").textContent = "Last Modified: " + date.toLocaleDateString();
+      document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
+
+    <script>
+  document.querySelectorAll('.plan-details').forEach(d => {
+    d.addEventListener('toggle', () => {
+      if (d.open) {
+        document.querySelectorAll('.plan-details').forEach(o => { if (o !== d) o.open = false; });
+      }
+    });
+  });
+</script>
+
   </body>
 </html>
